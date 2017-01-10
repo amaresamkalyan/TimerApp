@@ -16,14 +16,14 @@ describe('Clock', () => {
             var $el = $(ReactDOM.findDOMNode(clock));
             var actualText = $el.find('.clock-text').text();
 
-            expect(actualText).toBe('01:02');
+            expect(actualText).toBe('00:01:02');
         });
     });
     describe('formatSeconds', () => {
         it('Should formatSeconds', () => {
             var clock = TestUtils.renderIntoDocument(<Clock />);
             var seconds = 615;
-            var expected = '10:15';
+            var expected = '00:10:15';
             var actual = clock.formatSeconds(seconds);
 
             expect(actual).toBe(expected);
@@ -31,7 +31,7 @@ describe('Clock', () => {
         it('Should formatSeconds to 01:01', () => {
             var clock = TestUtils.renderIntoDocument(<Clock />);
             var seconds = 61;
-            var expected = '01:01';
+            var expected = '00:01:01';
             var actual = clock.formatSeconds(seconds);
 
             expect(actual).toBe(expected);
