@@ -8,14 +8,14 @@ var Navigation = () => {
         <ul className="menu">
           <li className="menu-text">Timer App</li>
           <li>
-            <IndexLink to="/" activeClassName="active-link" activeStyle={{ fontWeight: 'bold' }}>Timer</IndexLink>
+            <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
           </li>
           <li>
-            <Link to="/" activeClassName="active-link" activeStyle={{ fontWeight: 'bold' }}>Countdown</Link>
+            <Link to="/countdown" activeClassName="active-link">Countdown</Link>
           </li>
         </ul>
       </div>
-      <div className="top-bar-right" activeStyle={{ fontWeight: 'bold' }}>
+      <div className="top-bar-right">
         <ul className="menu">
           <li className="menu-text">
             Created by <a href="https://github.com/amaresamkalyan" target="_blank">Kalyan Amaresam</a>
